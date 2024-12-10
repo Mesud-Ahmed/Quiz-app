@@ -41,7 +41,7 @@ export default function Summary({ userAnswers }) {
                         <li key={index}>
                             <h3>{index + 1}</h3>
                             <p className='question'>{QUESTIONS[index].text}</p>
-                            <p className='user-answer'>{answer ?? 'skipped'}</p>
+                            <p className={cssClass}>{answer ?? 'skipped'}</p>
                         </li>
                     )
                 })}
